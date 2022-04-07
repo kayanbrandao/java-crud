@@ -15,6 +15,7 @@ public class Delete {
         PreparedStatement ps = conexao.prepareStatement(sql);
         ps.setInt(1, 2);
         ps.executeUpdate();
+        System.out.println("Success!");
         conexao.close();
     }
 }

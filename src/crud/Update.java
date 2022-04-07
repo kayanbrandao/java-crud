@@ -19,7 +19,6 @@ public class Update {
         ps.execute();
         
         System.out.println("Success!");
-
         conexao.close();
     }
 }

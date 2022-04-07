@@ -11,7 +11,7 @@ public class Insert {
     public static void main(String[] args) throws SQLException {
         Connection conexao = FabricaConexao.getConnection();
         
-        Pessoa p = new Pessoa("Teste03", "teste03@gmail.com", 30);
+        Pessoa p = new Pessoa("Teste01", "teste01@gmail.com", 01);
 
         String sql = 
         "INSERT INTO Pessoa (nome, email, idade) VALUE"+
@@ -22,7 +22,7 @@ public class Insert {
         ps.setString(2, p.getEmail());
         ps.setInt(3, p.getIdade());
         ps.execute();
-        System.out.println("Sucess!");
+        System.out.println("Success!");
         conexao.close();
     }
 }

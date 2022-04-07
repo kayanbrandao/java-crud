@@ -20,7 +20,7 @@ public class Create {
     
         Statement st = conexao.createStatement();
         st.execute(sql);
-        System.out.println("Sucess!");
+        System.out.println("Success!");
         conexao.close();    
     }
     
